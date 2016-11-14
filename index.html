@@ -1,0 +1,32 @@
+---
+---
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Michael Green</title>
+		<meta name="description" content="Thoughts and ramblings in the blog form by Michael Green.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<header>
+			{% include header.html %}
+		</header>
+		<div class="container">
+			{% for post in site.posts %}
+				<article>
+					<h1><a href="{{ site.base_url }}{{ post.url }}">{{ post.title }}</a></h1>
+					<p>{{ post.date | date_to_string }}</p>
+					<p>{{ post.content }}</p>
+				</article>
+			{% endfor %}
+		</div>
+		<footer>
+			{% include footer.html %}
+		</footer>
+	</body>
+</html>
