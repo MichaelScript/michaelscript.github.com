@@ -1,2 +1,2 @@
-blog! blog? blog.
+Blog! Blog? Blog.
 This will be up sooonish.
