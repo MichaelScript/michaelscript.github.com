@@ -1,0 +1,16 @@
+---
+layout: default
+title:
+---
+
+{% for post in site.posts %}
+<div class="item">
+	<a href="{{ post.url }}">
+		<div class="item-content">
+		    {{ post.date | date: "%B %e, %Y" }}<br>{{ post.title }}<br>
+		    {{ post.description }}
+	    </div>
+	</a>
+</div>
+{% endfor %}
+
