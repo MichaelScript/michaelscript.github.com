@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
-	{% include head.html %}
-    <body>
-	    <div id="title-bar">Lorem Ipsum</div>
-	    <h2>{{ page.title }}</h2>
-	    <div id="container">
-	        {{ content }}
-		</div>
-    </body>
+{% include head.html %}
+
+<body>
+    <div id="bar">
+        <div id="bar-title">Lorem Ipsum</div>
+        <div id="bar-nav"></div>
+    </div>
+    <div id="container">
+        {{ content }}
+    </div>
+</body>
+
 </html>

@@ -2,15 +2,13 @@
 layout: default
 title:
 ---
-
+<!-- Displaying all of the blog posts -->
 {% for post in site.posts %}
-<div class="item">
-	<a href="{{ post.url }}">
-		<div class="item-content">
-		    {{ post.date | date: "%B %e, %Y" }}<br>{{ post.title }}<br>
-		    {{ post.description }}
-	    </div>
-	</a>
-</div>
+<a href="{{ post.url }}" class="preview">
+	<div class="preview-container">
+		<div class="preview-title">{{ post.title }}</div>
+	    <div class="preview-date">{{ post.date | date: "%B %e, %Y" }}</div>
+    </div>
+</a>
 {% endfor %}
 
