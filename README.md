@@ -1,5 +1,1 @@
-
-##Color Pallete
-```
-#212121
-```
+naw
