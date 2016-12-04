@@ -1,4 +1,0 @@
-markdown: rdiscount
-sass:
-  sass_dir: _sass
-  style: compressed
